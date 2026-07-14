@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChronosRift</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
+    <!-- <style type="text/tailwindcss">
       @theme {
         --color-yellow: #f2c225;
         --color-beige: #e9dfc9;
@@ -33,11 +33,46 @@
         .section {
         }
       }
-    </style>
+    </style> -->
   </head>
-  <body>
+  <body class="bg-gray-900 text-neutral-500">
     <header>
-      <div>Header</div>
+      <div class="text-yellow-400">ChronosRift</div>
+      <div>
+        <ul class="flex px-120 gap-20">
+          <li class="text-neutral-500">Startseite</li>
+          <li class="text-neutral-500">Patchnotes</li>
+          <li class="text-neutral-500">Völker</li>
+          <li class="text-neutral-500">Neuigkeiten</li>
+          <li><button class="bg-neutral-500 text-yellow-400 px-4 py-2 rounded">Login</button></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col items-center mx-auto">
+        <p class="text-yellow-400 font-light text-sm mb-3 mt-30">STRATEGIE TRIFFT AUF KAMPF</p>
+        <h2 class="flex py-1 text-white text-center text-5xl font-bold">Chronos</h2>
+        <h2 class="flex py-1 text-white text-center text-5xl font-bold text-yellow-400">Rift</h2>
+        <p class="text-center">
+          Baue ein Imperium. Führe Helden in die Schlacht. Forme die Geschichte. <br />Das erste Echtzeit-Strategiespiel
+          mit MOBA-Kampfsystem.
+        </p>
+
+        <div class="flex">
+          <button class="flex mx-6 bg-yellow-400 text-black px-4 py-2 rounded">JETZT SPIELEN</button>
+          <button class="flex bg-yellow-400 text-black px-4 py-2 rounded">TRAILER ANSEHEN</button>
+        </div>
+
+        <div class="flex">
+          <h2>1.2M+</h2>
+          <p>SPIELER</p>
+
+          <h2>4</h2>
+          <p>VÖLKER</p>
+
+          <h2>S1</h2>
+          <p>SAISON</p>
+        </div>
+      </div>
     </header>
     <main>
       <div id="main-content">
