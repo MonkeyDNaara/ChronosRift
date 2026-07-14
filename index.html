@@ -7,20 +7,30 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
-        --color-yellow: #ffcc00;
+        --color-yellow: #f2c225;
         --color-beige: #e9dfc9;
         --color-grey: #808080;
-        --color-bluegrey: #9a9fb8;
+        --color-black: #070b12;
+        --color-white: #ffffff;
       }
       @layer base {
         header,
         main,
         footer {
-          @apply bg-dark text-grey;
+          @apply bg-black text-grey;
+        }
+        h2 {
+          @apply text-white;
+        }
+        h3 {
+          @apply text-beige;
+        }
+        h4 {
+          @apply text-yellow;
         }
       }
       @layer components {
-        .className {
+        .section {
         }
       }
     </style>
@@ -30,7 +40,47 @@
       <div>Header</div>
     </header>
     <main>
-      <div>Main</div>
+      <div id="main-content">
+        <div class="section" id="main-section">
+          <div>Chronos Rift</div>
+        </div>
+        <div class="section" id="game-section">
+          <div><h2>DAS SPIEL</h2></div>
+          <div id="game-description">
+            <div id="game-text">
+              <h3>ZWEI WELTEN.</h3>
+              <h4>EIN KRIEG.</h4>
+              <p>
+                ChronosRift vereint die epische Tiefe von Zivilisationsspielen —
+                Ressourcenmanagement, Technologiebäume, Diplomatie — mit der
+                Intensität von Echtzeit-Heldenkämpfen. Deine Entscheidungen auf
+                der Weltkarte bestimmen, welche Helden du auf das Schlachtfeld
+                schicken kannst.
+              </p>
+              <p>
+                Wähle dein Volk, forme Allianzen, und führe legendäre Champions
+                in den Kampf. Kein Match ist je gleich.
+              </p>
+            </div>
+            <div id="game-picture">BILD</div>
+          </div>
+          <div id="game-stats">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="section" id="fractions-section">
+          <div>DIE FRAKTIONEN</div>
+        </div>
+        <div class="section" id="news-section">
+          <div>AKTUELLES</div>
+        </div>
+        <div class="section" id="signup-section">
+          <div>SCHREIBE GESCHICHTE</div>
+        </div>
+      </div>
     </main>
     <footer>
       <div>Footer</div>
