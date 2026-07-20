@@ -12,11 +12,16 @@
         --color-grey: #808080;
         --color-black: #070b12;
         --color-white: #ffffff;
+        --color-yellow-faction: #7c8117;
+        --color-green-faction: #2dcb71;
+        --color-blue-faction: #3498dc;
+        --color-orange-faction: #e67d23;
       }
       @layer base {
         header,
         main,
-        footer {
+        footer,
+        body {
           @apply bg-black text-grey;
         }
         h2 {
@@ -45,17 +50,39 @@
             <div class="flex-shrink-0">
               <a href="#" class="flex items-center">
                 <img class="h-10 w-auto" src="Pictures/logo.jpeg" alt="Logo" />
-                <span class="ml-2 text-xl font-bold text-yellow-400">Chronos</span>
+                <span class="ml-2 text-xl font-bold text-yellow-400"
+                  >Chronos</span
+                >
                 <span class="text-xl font-bold text-neutral-300">Rift</span>
               </a>
             </div>
 
             <!-- 2. MITTE: Hauptnavigation (Jetzt völlig frei auf oberster Ebene) -->
             <div class="hidden md:flex md:space-x-10">
-              <a href="#" class="text-neutral-300 hover:text-yellow-400 px-3 py-2 text-sm font-medium"> Home </a>
-              <a href="#" class="text-neutral-300 hover:text-yellow-400 px-3 py-2 text-sm font-medium"> Völker </a>
-              <a href="#" class="text-neutral-300 hover:text-yellow-400 px-3 py-2 text-sm font-medium"> Neuigkeiten </a>
-              <a href="#" class="text-neutral-300 hover:text-yellow-400 px-3 py-2 text-sm font-medium"> Contact </a>
+              <a
+                href="#"
+                class="text-neutral-300 hover:text-yellow-400 px-3 py-2 text-sm font-medium"
+              >
+                Home
+              </a>
+              <a
+                href="#"
+                class="text-neutral-300 hover:text-yellow-400 px-3 py-2 text-sm font-medium"
+              >
+                Völker
+              </a>
+              <a
+                href="#"
+                class="text-neutral-300 hover:text-yellow-400 px-3 py-2 text-sm font-medium"
+              >
+                Neuigkeiten
+              </a>
+              <a
+                href="#"
+                class="text-neutral-300 hover:text-yellow-400 px-3 py-2 text-sm font-medium"
+              >
+                Contact
+              </a>
             </div>
 
             <!-- 3. RECHTS: Login/Signup & Mobile Button -->
@@ -89,7 +116,12 @@
                     stroke="currentColor"
                     aria-hidden="true"
                   >
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
                   </svg>
                 </button>
               </div>
@@ -100,7 +132,12 @@
         <!-- Mobile menu, show/hide based on menu state -->
         <div class="md:hidden hidden" id="mobile-menu">
           <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-800 bg-opacity-90">
-            <a href="#" class="text-white block px-3 py-2 rounded-md text-base font-medium"> Home </a>
+            <a
+              href="#"
+              class="text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
+              Home
+            </a>
             <a
               href="#"
               class="text-gray-300 hover:text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
@@ -157,9 +194,17 @@
       </div> -->
 
       <div class="flex flex-col items-center mx-auto">
-        <p class="text-yellow-400 font-light text-sm mb-3 mt-30">STRATEGIE TRIFFT AUF KAMPF</p>
-        <h1 class="flex py-1 text-neutral-300 text-center text-5xl font-bold">Chronos</h1>
-        <h1 class="flex py-1 text-center text-5xl font-bold text-yellow-400 mb-1">Rift</h1>
+        <p class="text-yellow-400 font-light text-sm mb-3 mt-30">
+          STRATEGIE TRIFFT AUF KAMPF
+        </p>
+        <h1 class="flex py-1 text-neutral-300 text-center text-5xl font-bold">
+          Chronos
+        </h1>
+        <h1
+          class="flex py-1 text-center text-5xl font-bold text-yellow-400 mb-1"
+        >
+          Rift
+        </h1>
         <p class="text-center">
           Baue ein Imperium. Führe Helden in die Schlacht. Forme die Geschichte.
           <br />Das erste Echtzeit-Strategiespiel mit MOBA-Kampfsystem.
@@ -195,63 +240,296 @@
       </div>
     </header>
     <main>
-      <div id="main-content" class="">
+      <div id="main-content" class="grid justify-items-center items-center">
         <div id="main-section" class="section">
           <div>Chronos Rift</div>
         </div>
-        <div class="section" id="game-section">
-          <div><h2>DAS SPIEL</h2></div>
-          <div id="game-description">
-            <div id="game-text">
-              <h3>ZWEI WELTEN.</h3>
-              <h4>EIN KRIEG.</h4>
-              <p>
-                ChronosRift vereint die epische Tiefe von Zivilisationsspielen — Ressourcenmanagement, Technologiebäume,
-                Diplomatie — mit der Intensität von Echtzeit-Heldenkämpfen. Deine Entscheidungen auf der Weltkarte
-                bestimmen, welche Helden du auf das Schlachtfeld schicken kannst.
+        <div
+          id="game-section"
+          class="section grid col-span-full xl:w-400 2xl:w-400"
+        >
+          <div class="text-3xl mx-8 mt-40"><h2>DAS SPIEL</h2></div>
+          <div class="flex p-4" id="game-description">
+            <div id="game-text" class="px-4">
+              <h3 class="text-2xl mx-4 my-2">ZWEI WELTEN.</h3>
+              <h4 class="text-2xl mx-4 my-2">EIN KRIEG.</h4>
+              <p class="mx-6">
+                ChronosRift vereint die epische Tiefe von Zivilisationsspielen —
+                Ressourcenmanagement, Technologiebäume, Diplomatie — mit der
+                Intensität von Echtzeit-Heldenkämpfen. Deine Entscheidungen auf
+                der Weltkarte bestimmen, welche Helden du auf das Schlachtfeld
+                schicken kannst.
               </p>
-              <p>
-                Wähle dein Volk, forme Allianzen, und führe legendäre Champions in den Kampf. Kein Match ist je gleich.
+              <p class="mx-6">
+                Wähle dein Volk, forme Allianzen, und führe legendäre Champions
+                in den Kampf. Kein Match ist je gleich.
               </p>
             </div>
             <div id="game-picture" class="m-8">
               <img src="Pictures/1.jpeg" alt="game image" />
             </div>
           </div>
-          <div id="game-stats">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div
+            id="game-stats"
+            class="grid grid-cols-4 justify-center items-center"
+          >
+            <div
+              class="grid grid-flow-row-dense grid-cols-10 gap-1 justify-items-center items-center hover:scale-105"
+            >
+              <div class="text-yellow text-4xl">☆</div>
+              <div class="col-span-4 grid grid-flow-col grid-rows-2">
+                <div class="text-beige">Technologiebäume</div>
+                <div class="text-grey">120+ Forschungen</div>
+              </div>
+            </div>
+            <div
+              class="grid grid-flow-row-dense grid-cols-10 gap-1 justify-items-center items-center hover:scale-105"
+            >
+              <div class="text-yellow text-4xl">☆</div>
+              <div class="col-span-4 grid grid-flow-col grid-rows-2">
+                <div class="text-beige">Helden</div>
+                <div class="text-grey">60+ Champions</div>
+              </div>
+            </div>
+            <div
+              class="grid grid-flow-row-dense grid-cols-10 gap-1 justify-items-center items-center hover:scale-105"
+            >
+              <div class="text-yellow text-4xl">☆</div>
+              <div class="col-span-4 grid grid-flow-col grid-rows-2">
+                <div class="text-beige">Multiplayer</div>
+                <div class="text-grey">Bis zu 8 Spieler</div>
+              </div>
+            </div>
+            <div
+              class="grid grid-flow-row-dense grid-cols-10 gap-1 justify-items-center items-center hover:scale-105"
+            >
+              <div class="text-yellow text-4xl">☆</div>
+              <div class="col-span-4 grid grid-flow-col grid-rows-2">
+                <div class="text-beige">Weltkarte</div>
+                <div class="text-grey">Prozedural generiert</div>
+              </div>
+            </div>
           </div>
         </div>
         <div id="fractions-section" class="section">
-          <div>DIE FRAKTIONEN</div>
+          <div class="section grid col-span-full xl:w-400 2xl:w-400">
+            <div class="text-3xl mx-8 mt-40 w-100vw">
+              <h2>DIE FRAKTIONEN</h2>
+            </div>
+            <div class="grid col-span-full mx-4 mt-2 justify-items-center">
+              <div class="text-2xl mt-2">
+                <h3>WÄHLE DEIN <span class="text-yellow">VOLK</span></h3>
+              </div>
+              <div class="my-2">
+                Jedes Volk bringt einzigartige Stärken, Helden und Spielstile
+                mit sich. Die Wahl bestimmt dein Schicksal.
+              </div>
+              <div class="grid grid-cols-4">
+                <div
+                  class="grid max-w-70 border-2 border-yellow-faction rounded-md m-2 hover:scale-105 shadow-lg shadow-gray-600"
+                >
+                  <div class="rounded-md">
+                    <img src="Pictures/2.jpeg" alt="Valethar Fraction" />
+                  </div>
+                  <div class="grid justify-items-center text-center m-2">
+                    <div class="text-yellow-faction my-1">
+                      INDUSTRIE & KRIEGSKUNST
+                    </div>
+                    <div class="text-beige font-bold text-xl my-1">
+                      IMPERIUM VON VALETHAR
+                    </div>
+                    <div class="mt-1">
+                      Ein unaufhaltsames Reich aus Stahl und Disziplin.
+                    </div>
+                    <div class="mb-1">
+                      Ihre Legionen haben noch keine Niederlage erlitten.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="grid max-w-70 border-2 border-green-faction rounded-md m-2 hover:scale-105 shadow-lg shadow-gray-600"
+                >
+                  <div class="rounded-md">
+                    <img src="Pictures/3.jpeg" alt="Valethar Fraction" />
+                  </div>
+                  <div class="grid justify-items-center text-center m-2">
+                    <div class="text-green-faction my-1">
+                      NATUR & ARKANE MAGIE
+                    </div>
+                    <div class="text-beige font-bold text-xl my-1">
+                      WALDVOLK DER SYLVARA
+                    </div>
+                    <div class="mt-1">Uralt wie die Wälder selbst.</div>
+                    <div class="mb-1">
+                      Die Sylvara weben Magie in jeden Angriff und jede
+                      Verteidigung.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="grid max-w-70 border-2 border-blue-faction rounded-md m-2 hover:scale-105 shadow-lg shadow-gray-600"
+                >
+                  <div class="rounded-md">
+                    <img src="Pictures/4.jpeg" alt="Valethar Fraction" />
+                  </div>
+                  <div class="grid justify-items-center text-center m-2">
+                    <div class="text-blue-faction my-1">
+                      HANDEL & DIPLOMATIE
+                    </div>
+                    <div class="text-beige font-bold text-xl my-1">
+                      SEEFAHRER VON MYRINDAL
+                    </div>
+                    <div class="mt-1">Auf See ungeschlagen.</div>
+                    <div class="mb-1">
+                      Ihre Schiffe tragen Händler und Assassinen in gleichen
+                      Teilen.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="grid max-w-70 border-2 border-orange-faction rounded-md m-2 hover:scale-105 shadow-lg shadow-gray-600"
+                >
+                  <div class="rounded-md">
+                    <img src="Pictures/5.jpeg" alt="Valethar Fraction" />
+                  </div>
+                  <div class="grid justify-items-center text-center m-2">
+                    <div class="text-orange-faction my-1">
+                      SCHNELLIGKEIT & GUERILLA
+                    </div>
+                    <div class="text-beige font-bold text-xl my-1">
+                      WÜSTENSTÄMME KHA’ZARAK
+                    </div>
+                    <div class="mt-1">Tödlich wie Sandstürme.</div>
+                    <div class="mb-1">
+                      Kein Feind hat je ihre Heimat durchquert — keiner kehrte
+                      zurück.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div id="news-section" class="section">
           <div>AKTUELLES</div>
         </div>
-        <div class="section" id="signup-section">
-          <div>SCHREIBE GESCHICHTE</div>
-        </div>
+        <section
+          id="signup-section"
+          class="section flex min-h-[640px] items-center justify-center bg-black px-6"
+        >
+          <div
+            class="flex w-full max-w-4xl flex-col items-center gap-5 text-center"
+          >
+            <h2
+              class="text-3xl font-bold tracking-tight text-beige md:text-5xl"
+            >
+              SCHREIBE <span class="text-yellow">GESCHICHTE</span>
+            </h2>
+
+            <p class="max-w-3xl text-sm leading-relaxed text-grey md:text-base">
+              Kostenlos spielen — keine Kreditkarte erforderlich. Tritt noch
+              heute einer von vier Fraktionen bei und kämpfe um die
+              Vorherrschaft.
+            </p>
+
+            <a
+              href="#"
+              class="mt-2 bg-yellow px-10 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-black transition-colors duration-200 hover:bg-beige md:text-sm"
+            >
+              KONTO ERSTELLEN — KOSTENLOS
+            </a>
+          </div>
+        </section>
       </div>
     </main>
-    <footer>
-      <div>
-        <a href="#main-section">CHRONOSRIFT</a>
 
-        <nav aria-label="Footer-Navigation">
-          <ul>
-            <li><a href="#main-section">Startseite</a></li>
-            <li><a href="#news-section">Patchnotes</a></li>
-            <li><a href="#fractions-section">Völker</a></li>
-            <li><a href="#news-section">Neuigkeiten</a></li>
-            <li><a href="#">Impressum</a></li>
-            <li><a href="#">Datenschutz</a></li>
+    <footer class="border-t border-yellow/40 bg-black px-6 text-grey">
+      <div
+        class="mx-auto grid min-h-56 max-w-7xl grid-cols-1 items-center gap-10 py-10 md:grid-cols-[1fr_auto_1fr] md:py-0"
+      >
+        <a
+          href="#main-section"
+          class="flex items-center justify-self-center md:justify-self-start"
+          aria-label="ChronosRift Startseite"
+        >
+          <img
+            src="Pictures/logo.jpeg"
+            alt=""
+            class="mr-3 h-9 w-9 object-cover"
+          />
+
+          <span class="text-lg font-bold tracking-wide">
+            <span class="text-yellow">CHRONOS</span
+            ><span class="text-grey">RIFT</span>
+          </span>
+        </a>
+
+        <nav
+          aria-label="Footer-Navigation"
+          class="justify-self-center text-sm font-medium uppercase tracking-widest"
+        >
+          <ul class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+            <li>
+              <a
+                href="#main-section"
+                class="transition-colors duration-200 hover:text-yellow"
+              >
+                Startseite
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#news-section"
+                class="transition-colors duration-200 hover:text-yellow"
+              >
+                Patchnotes
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#fractions-section"
+                class="transition-colors duration-200 hover:text-yellow"
+              >
+                Völker
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#news-section"
+                class="transition-colors duration-200 hover:text-yellow"
+              >
+                Neuigkeiten
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="transition-colors duration-200 hover:text-yellow"
+              >
+                Impressum
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="transition-colors duration-200 hover:text-yellow"
+              >
+                Datenschutz
+              </a>
+            </li>
           </ul>
         </nav>
 
-        <p>© 2026 ChronosRift Studio</p>
+        <p
+          class="justify-self-center text-center text-sm leading-5 md:justify-self-end md:text-left"
+        >
+          © 2026 ChronosRift Studio
+        </p>
       </div>
     </footer>
   </body>
